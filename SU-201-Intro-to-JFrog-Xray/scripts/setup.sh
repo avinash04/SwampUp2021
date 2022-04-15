@@ -25,7 +25,7 @@ jfrog rt ping --url=http://$INSTANCE_NAME.jfrog.io/artifactory
 
 echo -n
 chmod +x jfrog
-jfrog config add $CLI_NAME --artifactory-url https://$INSTANCE_NAME.jfrog.io/artifactory --user $INSTANCE_USERNAME --apikey $APT_KEY --interactive=false
+jfrog config add $CLI_NAME --artifactory-url https://$INSTANCE_NAME.jfrog.io/artifactory --user $INSTANCE_USERNAME --password $APT_KEY --interactive=false
 jfrog config use $CLI_NAME
 
 echo -n "START : Create local Repository in JFrog Artifactory"
