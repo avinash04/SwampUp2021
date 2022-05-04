@@ -19,12 +19,12 @@
             {
                 "type": "build",
                 "bin_mgr_id": "default",
-                "name": "mvn_example_pipeline"
+                "name": "swampup_s003_mvn_pipeline"
             },
             {
                 "type": "build",
                 "bin_mgr_id": "default",
-                "name": "npm_example_pipeline"
+                "name": "swampup_s003_npm_pipeline"
             }
         ]
     },
