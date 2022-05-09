@@ -1,6 +1,6 @@
 {
     "general_data": {
-        "name": "swampup_secops_watch",
+        "name": "swampup22_secops_watch",
         "description": "This is a watch created for SecOps team",
         "active": true
     },
@@ -9,22 +9,22 @@
             {
                 "type": "repository",
                 "bin_mgr_id": "default",
-                "name": "su201-libs-release-local"
+                "name": "s003-libs-release-local"
             },
             {
                 "type": "repository",
                 "bin_mgr_id": "default",
-                "name": "su201-npm-local"
+                "name": "s003-npm-local"
             },
             {
                 "type": "build",
                 "bin_mgr_id": "default",
-                "name": "swampup_s003_mvn_pipeline"
+                "name": "swampup22_s003_mvn_pipeline"
             },
             {
                 "type": "build",
                 "bin_mgr_id": "default",
-                "name": "swampup_s003_npm_pipeline"
+                "name": "swampup22_s003_npm_pipeline"
             }
         ]
     },

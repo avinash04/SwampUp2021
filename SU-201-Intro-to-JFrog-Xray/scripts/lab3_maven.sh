@@ -12,7 +12,7 @@
 
 cd ../maven-example
 
-echo -n "Configuration name for CLI (unique name) : "
+echo "Enter already create CLI Configuration name"
 read -r CLIName
 export CLI_NAME=${CLIName}
 
@@ -23,23 +23,27 @@ jf rt ping
 
 #Config Maven
 
-jf mvnc --repo-resolve-snapshots su201-libs-snapshot --repo-resolve-releases su201-libs-release --repo-deploy-snapshots su201-libs-snapshot --repo-deploy-releases su201-libs-release
+jf mvnc --repo-resolve-snapshots s003-libs-snapshot --repo-resolve-releases s003-libs-release --repo-deploy-snapshots s003-libs-snapshot --repo-deploy-releases s003-libs-release
 
 RANDOM=$$
 export BUILD_NUMBER=${RANDOM}
 
 #Run Maven Build
 
-jf mvn clean install -Dartifactory.publish.artifacts=true --build-name=swampup_s003_mvn_pipeline --build-number=$BUILD_NUMBER
+jf mvn clean install -Dartifactory.publish.artifacts=true --build-name=swampup22_s003_mvn_pipeline --build-number=$BUILD_NUMBER
 
 #Collect Environment Variables
 
-jf rt bce swampup_s003_mvn_pipeline $BUILD_NUMBER
+jf rt bce swampup22_s003_mvn_pipeline $BUILD_NUMBER
+
+#Collect GIT Variables
+
+jf rt bag swampup22_s003_mvn_pipeline $BUILD_NUMBER ../../.
 
 #Publish Build Info
 
-jf rt bp swampup_s003_mvn_pipeline $BUILD_NUMBER
+jf rt bp swampup22_s003_mvn_pipeline $BUILD_NUMBER
 
 echo "START : Xray Scan"
-jf bs swampup_s003_mvn_pipeline $BUILD_NUMBER
+jf bs swampup22_s003_mvn_pipeline $BUILD_NUMBER
 echo "COMPLETE : Xray Scan"

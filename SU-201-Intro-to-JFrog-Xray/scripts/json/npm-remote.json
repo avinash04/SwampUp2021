@@ -1,5 +1,5 @@
 {
-    "key": "su201-npm-remote",
+    "key": "s003-npm-remote",
     "rclass": "remote",
     "url": "https://registry.npmjs.org",
     "packageType": "npm"

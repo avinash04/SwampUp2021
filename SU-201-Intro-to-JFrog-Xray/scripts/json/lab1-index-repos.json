@@ -1,23 +1,23 @@
 {
     "indexed_repos": [
         {
-            "name":"su201-libs-release-local",
+            "name":"s003-libs-release-local",
             "type":"local",
             "pkg_type":"Maven"
         },{
-            "name":"su201-libs-snapshot-local",
+            "name":"s003-libs-snapshot-local",
             "type":"local",
             "pkg_type":"Maven"
         },{
-            "name":"su201-npm-local",
+            "name":"s003-npm-local",
             "type":"local",
             "pkg_type":"npm"
         },{
-            "name":"su201-maven-jcenter",
+            "name":"s003-maven-jcenter",
             "type":"remote",
             "pkg_type":"Maven"
         },{
-            "name":"su201-npm-remote",
+            "name":"s003-npm-remote",
             "type":"remote",
             "pkg_type":"npm"
         }

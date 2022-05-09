@@ -1,6 +1,6 @@
 {
     "indexed_builds": [
-        "swampup_s003_mvn_pipeline",
-        "swampup_s003_npm_pipeline"
+        "swampup22_s003_mvn_pipeline",
+        "swampup22_s003_npm_pipeline"
     ]
 }
