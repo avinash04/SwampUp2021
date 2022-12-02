@@ -1,10 +1,10 @@
 version: 1
 type: maven
 resolver:
-  serverId: newplat
+  serverId: localcli
   snapshotRepo: s003-libs-snapshot
   releaseRepo: s003-libs-release
 deployer:
-  serverId: newplat
+  serverId: localcli
   snapshotRepo: s003-libs-snapshot
   releaseRepo: s003-libs-release
