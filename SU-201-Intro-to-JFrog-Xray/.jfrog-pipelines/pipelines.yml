@@ -65,7 +65,7 @@ pipelines:
         configuration:
           deployerSnapshotRepo: su201-libs-snapshot
           deployerReleaseRepo:  su201-libs-release
-          sourceLocation: ./SU-201-Intro-to-JFrog-Xray/maven-example/
+          sourceLocation: ./SU-201-Intro-to-JFrog-Xray/maven-fixed-example/
           #mvnCommand: clean install -ntp
           inputResources:
             - name: git_repo
